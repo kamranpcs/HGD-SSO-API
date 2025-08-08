@@ -1,6 +1,6 @@
 @HGD_SSO_API_HostAddress = http://localhost:5147
 
-GET {{HGD_SSO_API_HostAddress}}/weatherforecast/
+GET {{HGD_SSO_API_HostAddress}}/login/
 Accept: application/json
 
 ###
