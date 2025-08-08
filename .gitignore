@@ -1,0 +1,66 @@
+## -----------------------------------------
+## .NET & ASP.NET Core
+## -----------------------------------------
+bin/
+obj/
+out/
+**/Properties/launchSettings.json
+
+# Visual Studio auto-generated files
+*.user
+*.userosscache
+*.suo
+*.cache
+*.pdb
+*.mdb
+*.log
+*.ldf
+*.ndf
+
+# Package restore
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# DotNet Watch & Temp
+*.tmp
+*.temp
+*.tmp.*
+*.temp.*
+*.lock.json
+project.lock.json
+
+# Entity Framework Core Migrations (generated snapshot files)
+*Migrations/*.Designer.cs
+*Migrations/*.resx
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Publish output
+publish/
+wwwroot/dist/
+wwwroot/node_modules/
+
+# dotenv
+.env
+.env.*
+!env.example
+
+## -----------------------------------------
+## Rider (JetBrains)
+## -----------------------------------------
+.idea/
+.idea_modules/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/
