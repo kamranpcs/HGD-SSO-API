@@ -38,7 +38,28 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
+
+// Add CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalAndNgrok",
+        policy =>
+        {
+            policy
+                .WithOrigins(
+                    "http://localhost:3000",          // Your frontend local dev
+                    "https://786cdd3b306c.ngrok-free.app" // Your ngrok domain
+                )
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials();
+        });
+});
+
 var app = builder.Build();
+
+// Use CORS policy
+app.UseCors("AllowLocalAndNgrok");
 
 // --- DataBase Seeder ---
 using (var scope = app.Services.CreateScope())
