@@ -16,7 +16,7 @@ public static class DatabaseSeeder
             var testUser = new User
             {
                 Id = Guid.NewGuid(),
-                UserName = "testuser",
+                Username = "testuser",
                 PasswordHash = HashPassword(plainPassword),
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
