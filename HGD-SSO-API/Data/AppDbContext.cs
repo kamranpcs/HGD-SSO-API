@@ -1,5 +1,6 @@
 using HGD_SSO_API.Models.AuthManagement;
 using HGD_SSO_API.Models.Common;
+using HGD_SSO_API.Models.Configs;
 using HGD_SSO_API.Models.UserManagement;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,6 +16,7 @@ public class AppDbContext : DbContext
     //Entities
     public DbSet<User> Users { get; set; }
     public DbSet<RefreshToken> RefreshTokens { get; set; }
+    public DbSet<RedirectUrl> RedirectUrls { get; set; }
 
     //Configs
     public override int SaveChanges()
